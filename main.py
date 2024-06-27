@@ -14,10 +14,12 @@ def main():
         minval = num3
         
     # ^this found the min
-    if num2 > maxval:
+    if num2 > maxval and num2 > num3:
         maxval = num2
-        if num3 > maxval:
-            maxval = num3
+    elif num3 > maxval:
+        maxval = num3
+
+        
             
     # ^This found the max
     
