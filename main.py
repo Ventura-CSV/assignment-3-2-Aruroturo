@@ -6,10 +6,12 @@ def main():
     median = num1
     maxval = num1
    # Three different sections from or labs
-    if num2 < minval:
-        minval = num2
-        if num3 < minval:
-            minval = num3
+    if minval < num2 and minval < num3:
+        minval = minval
+    elif num2 < num3 and num2 < minval:
+        minval= num2
+    else:
+        minval = num3
         
     # ^this found the min
     if num2 > maxval:
