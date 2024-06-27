@@ -10,20 +10,24 @@ def main():
         minval = num2
         if num3 < minval:
             minval = num3
+        
     # ^this found the min
     if num2 > maxval:
         maxval = num2
         if num3 > maxval:
             maxval = num3
+            
     # ^This found the max
+    
     if num1 > minval and num1 < maxval:
         median = num1
     elif num2 > minval and num2 < maxval:
         median = num2
     else:
         median = num3
+  
     # ^ this found the median
-    print(f'{minval} {median} {maxval}')
+    
         
     
     """
